@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/baner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 290px;
+  cursor: pointer;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.navbar ul li ::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #a884ed;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li :hover:after {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  transform: translate(-50px);
+  text-align: left;
+  color: #fff;
+  letter-spacing: 18px;
+}
+.content h1 {
+  font-size: 80px;
+  font-weight: bolder;
+}
+.content h3 {
+  font-size: 15px;
+  color: #d0bcf5;
+}
+.about {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  text-align: center;
+}
+.about h1 {
+  padding: 35px 0;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.about p {
+  line-height: 75px;
+  letter-spacing: 8px;
+  font-size: 40px;
+  font-weight: 22px;
+  color: #ca9c9c;
+  padding-bottom: 20px;
+}
+.about p .skilltxt {
+  color: black;
+  padding: 35px 0;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.skill {
+  background-color: #474342;
+  padding: 75px 0;
+  height: 85;
+}
+.tab-skill {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
